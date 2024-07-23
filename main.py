@@ -10,6 +10,7 @@ def main():
     if plugin.connectivity_test():
         collected_data = plugin.collect()
         if collected_data:
+            # for debuting purposes
             plugin.output(collected_data)
         else:
             print("No data collected.")
